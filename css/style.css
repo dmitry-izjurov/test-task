@@ -1,0 +1,132 @@
+/* Подключаем шрифт OpenSans */
+@font-face {
+  font-family: 'open sans';
+  src: url(../fonts/opensans/opensans.woff2),
+       url(../fonts/opensans/opensans.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Подключаем шрифт OpenSans-Bold 800 */
+@font-face {
+  font-family: 'open sans';
+  src: url(../fonts/opensans/opensansbold.woff2),
+       url(../fonts/opensans/opensansbold.woff);
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Подключаем шрифт FuturaPT-Bold */
+@font-face {
+  font-family: 'futura pt';
+  src: url(../fonts/futura_pt/FuturaPT-Bold.woff2),
+       url(../fonts/futura_pt/FuturaPT-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Конец Подключение шрифтов ----------------------------------------------------------+ */
+
+/* Корневой элемент страницы ----------------------------------------------------------+ */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+  font-family: 'open sans', arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.main-container-header-contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-box-header-logo{
+  display: flex;
+  justify-content: end;
+  flex-grow: 1;
+  background-color: #e6e6e6;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-header-logo {
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 10px 20px 10px;
+  width: 320px;
+}
+
+.header-logo {
+  display: block;
+  max-width: 105px;
+}
+.header-logo-text {
+  display: block;
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 13px;
+  line-height: 30px;
+
+  font-size: 25px;
+  color: #663333;
+  font-weight: 800;
+  font-family: "futura pt";
+  text-transform: uppercase;
+}
+
+.container-header {
+  display: flex;
+  flex-grow: 1;
+  background-color: inherit;
+}
+
+.container-header-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.container-header-contact {
+  margin-left: 27px;
+}
+
+.container-header-contact:first-child {
+  margin-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.header-contact-link {
+  display: flex;
+}
+
+.header-img {
+  max-width: 25px;
+}
+
+.contact-header-text {
+  margin: 0 0 0 14px;
+}
+
+.header-button-feedback {
+  border: 1px solid #663333;
+}
+
+.contact-feedback-text {
+  margin: 0;
+  padding: 12px 24px 12px 24px;
+  color: #663333;
+}
+
+.contact-feedback-text:hover {
+  color: #ffffff;
+  background-color: #663333;
+}
+
+/* Конец Корневой элемент страницы ----------------------------------------------------------+ */
