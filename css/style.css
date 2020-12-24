@@ -41,7 +41,7 @@ body {
 
 .bg-box-header-logo{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   flex-grow: 1;
   background-color: #e6e6e6;
