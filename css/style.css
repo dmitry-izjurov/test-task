@@ -29,7 +29,7 @@ body {
   
   font-family: 'open sans', arial, sans-serif;
   background-color: #ffffff;
-  min-width: 960px;
+  min-width: 1024px;
 }
 
 /* - - - - - - - header - - - - - - - */
@@ -124,7 +124,7 @@ body {
 }
 
 .header-contact-link {
-  display: flex;;
+  display: flex;
 }
 
 .header-img {
@@ -136,7 +136,6 @@ body {
   font-size: 16px;
   color: #505050;
   font-weight: 700;
-  white-space: nowrap;
 }
 
 .header-button-feedback {
@@ -146,13 +145,15 @@ body {
 .contact-feedback-text {
   margin: 0;
   padding: 12px 24px 12px 24px;
-  white-space: nowrap;
-  color: #663333;
 }
 
 .contact-feedback-text:hover {
   color: #ffffff;
-  background-color: #663333;
+  background-color: #8b2bb1;
+}
+
+.con-fb-text-header {
+  color: #663333;
 }
 
 .container-header-menu {
@@ -271,23 +272,21 @@ body {
 
 /* - - - - - - - main - - - - - - - */
 
-.main {
-  margin-top: 77px;
-}
-
 .bg-container-our-services {
   background-color: inherit;
 }
 
 .container-content-section {
-  display: flex;
-  flex-wrap: wrap;
   box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 85px 10px;
   width: 960px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.container-content-section-bmf {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header-our-services {
@@ -295,7 +294,7 @@ body {
   margin-right: 20px;
 }
 
-.header-text-our-services {
+.header-text-our-services, .header-text-price {
   color: #252525;
 }
 
@@ -303,7 +302,6 @@ body {
   position: relative;
 
   margin: 0;
-  padding-top: 30px;
   padding-bottom: 30px;
   font-size: 30px;
   font-weight: 800;
@@ -348,6 +346,7 @@ body {
 }
 
 .container-article-link {
+  position: relative;
   display: block;
   box-sizing: border-box;
   width: 191px;
@@ -355,6 +354,21 @@ body {
   padding-bottom: 5px;
   padding-left: 18px;
   background-color: #518a32;
+}
+
+.container-article-link::after {
+  content: "";
+	position: absolute;
+
+	top: 0;
+	right: 0;
+	border-top: 28px solid #518a32;
+	border-right: 19px solid transparent;
+	background-color: #ffffff;
+}
+
+.container-article-link-main::after {
+  display: none;
 }
 
 .container-article-link-main {
@@ -382,7 +396,6 @@ body {
 .container-article-info {
   box-sizing: border-box;
   padding-top: 90px;
-  padding-bottom: 90px;
 }
 
 .article-info {
@@ -394,7 +407,34 @@ body {
 }
 
 .bg-container-our-advantages {
-  background-color: #663333;;
+  background-color: #663333;
+}
+
+.con-dec-our-adv {
+  position: relative;
+}
+
+.con-dec-our-adv::before {
+  position: absolute;
+  content: "";
+
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 284px;
+	border-top: 25px solid #ffffff; 
+	border-right: 18px solid transparent;	
+}
+
+.con-dec-our-adv::after {
+  position: absolute;
+  content: "";
+
+  width: 960px;
+  height: 25px;
+  top: 0;
+  right: 676px;
+  background-color: #ffffff;
 }
 
 .header-text-our-advantages {
@@ -437,7 +477,7 @@ body {
   height: 70px;
 }
 
-.h-cont-our-adv {
+.h-cont-our-adv, .text-our-adv {
   color: #ffffff;
 }
 
@@ -450,14 +490,335 @@ body {
   font-weight: 700;
 }
 
-.text-our-adv {
-  color: #ffffff;
-}
-
 .text-section {
   margin: 0;
   font-size: 13px;
   line-height: 22px;
   
   font-weight: 400;
+}
+
+.bg-container-transportation {
+  background-color: #e6e6e6;
+}
+
+.con-dec-trans {
+  position: relative;
+  padding-top: 110px;
+}
+
+.con-dec-trans::before {
+  position: absolute;
+  content: "";
+
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 301px;
+	border-top: 25px solid #663333; 
+	border-right: 18px solid transparent;	
+}
+
+.con-dec-trans::after {
+  position: absolute;
+  content: "";
+
+  width: 1447px;
+  height: 25px;
+  top: 0;
+  right: 319px;
+  background-color: #663333;
+}
+
+.header-text-transportation, .text-trans, .header-text-vehicle-fleet {
+  color: #252525;
+}
+
+.con-cont-box-trans {
+  position: relative;
+}
+
+.con-cont-box-trans:nth-child(n+2)::before {
+  content: "";
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 7px solid #252525;
+	border-bottom: 5px solid transparent;
+  top: 35px;
+  left: -7px;
+}
+
+.con-cont-box-trans:nth-child(n+2)::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  background-color: #252525;
+	
+  top: 39px;
+  left: -20px;
+}
+
+.cont-box-trans-pre {
+  fill: #518a32;
+}
+
+.h-cont-trans {
+  color: #505050;
+}
+
+.h-cont-trans-link {
+  color: #518a32;
+}
+
+.bg-container-vehicle-fleet {
+  background-color: inherit;
+}
+
+.boxs-vehicle-fleet {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.container-vehicle-fleet {
+  box-sizing: border-box;
+  width: 425px;
+  margin-right: 32px;
+  padding-left: 20px;
+}
+
+.container-vehicle-fleet:nth-child(2n+1) {
+  padding-left: 0;
+}
+
+.container-vehicle-fleet:nth-child(n+3) {
+  margin-top: 50px;
+}
+
+.list-veh-parm-mass {
+  display: flex;
+  padding: 0;
+}
+
+.item-veh-parm-mass {
+  width: 100px;
+  text-align: center;
+  background-color: #d12c2c;
+}
+
+.veh-parm {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fffefe;;
+}
+
+.item-veh-parm-size {
+  position: relative;
+  width: 241px;
+  background-color: #663333;
+  padding-left: 38px;
+}
+
+.item-veh-parm-size::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+	height: 0;
+	border-top: 28px solid#d12c2c; 
+  border-right: 21px solid transparent;
+}
+
+.item-veh-parm-size::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -21px;
+  width: 0;
+	height: 0;
+	border-top: 28px solid #663333; 
+  border-right: 21px solid transparent;
+}
+
+.box-veh-fleet-pre {
+  display: block;
+  width: 435px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* - - - - - - - footer - - - - - - - */
+
+.footer {
+  background-color: #1c1c1c;
+}
+
+.container-content-footer {
+  box-sizing: border-box;
+  padding: 40px 10px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-footer-contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+  font-style: inherit;
+}
+
+.footer-text {
+  display: block;
+  margin: 0;
+  font-size: 13px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.footer-text-box {
+  display: block;
+}
+
+.footer-button-feedback {
+  border: 1px solid #ffffff;
+}
+
+.con-fb-text-footer {
+  color: #ffffff;
+}
+
+.container-footer-info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 10px;
+}
+
+.container-footer-info::after {
+  position: absolute;
+  content: "";
+  width: 940px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background-color: #616161;
+}
+
+.footer-info-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+/* Прайс 1.5 тонны */
+
+.bg-container-price {
+  background-color: inherit;
+}
+
+.con-content-price {
+  padding: 28px 10px 90px 10px;
+}
+
+.container-navigation-menu {
+  display: flex;
+  padding: 0;
+}
+
+.navigation-menu-item {
+  position: relative;
+  margin-left: 28px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.navigation-menu-item::before {
+  position: absolute;
+  content: ">";
+  left: -15px;
+  top: 0;
+}
+
+.navigation-menu-item:first-child {
+  margin-left: 0;
+}
+
+.navigation-menu-item:first-child::before {
+  display: none;
+}
+
+.navigation-menu-item-link {
+  color: #663333;
+}
+
+.header-price {
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+
+.list-price-veh-mass {
+  display: flex;
+  padding: 0;
+}
+
+.item-price-veh-mass {
+  position: relative;
+  width: 140px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 18px;
+  background-color: #663333;
+}
+
+.item-price-veh-mass:last-child::after {
+  position: absolute;
+  content: "";
+
+  top: 0;
+  right: 0;
+  width: 0;
+	height: 0;
+	border-bottom: 46px solid #ffffff; 
+	border-left: 32px solid transparent;
+}
+
+.item-price-active {
+  background-color: #d12c2c;
+}
+
+.item-price-active::after {
+  position: absolute;
+  content: "";
+
+  top: 0;
+  right: 0;
+  width: 0;
+	height: 0;
+	border-bottom: 46px solid #663333; 
+	border-left: 32px solid transparent;
+}
+
+/* - - - - - - - hidden - - - - - - - */
+
+.hidden {
+  display: none;
 }
