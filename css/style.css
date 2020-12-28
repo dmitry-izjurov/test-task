@@ -339,12 +339,12 @@ body {
   margin-right: 20px;
 }
 
-.article-content:first-of-type {
+.article-content:nth-child(2) {
   position: relative;
   margin-bottom: 32px;
 }
 
-.article-content:last-of-type {
+.article-content:nth-child(3n+5) {
   margin-right: 0;
 }
 
