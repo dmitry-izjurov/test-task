@@ -7,9 +7,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="button-up hidden">
+    <svg class="button-up-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 466.667 466.667">
+      <g>
+        <path d="M423.571,176.43L256.904,9.764c-13.017-13.018-34.122-13.018-47.14,0L43.098,176.43c-13.018,13.018-13.018,34.123,0,47.141
+          c13.018,13.018,34.123,13.018,47.141,0l109.762-109.764v319.527c0,18.408,14.924,33.333,33.333,33.333
+          c18.409,0,33.333-14.925,33.333-33.333V113.807l109.764,109.764c6.509,6.508,15.039,9.762,23.57,9.762
+          c8.53,0,17.062-3.254,23.569-9.764C436.588,210.552,436.588,189.448,423.571,176.43z"/>
+      </g>
+    </svg>
+  </div>
   <header class="header">
-    <div class="main-container-header-contacts">
-      <div class="bg-box-header-logo">
+    <div class="main-container-header-contacts mv-pos-fixed">
+      <div class="bg-box-header-logo mv-button-menu">
         <a class="header-logo-link link" href="#0">
           <div class="container-header-logo">
             <img src="images/logo.jpg" class="header-logo" alt="Логотип домашний переезд" title="Домашний переезд">
@@ -19,7 +29,7 @@
           </div>
         </a>
       </div>
-      <div class="container-header">
+      <div class="container-header mv-hidden">
         <ul class="container-header-contacts list">
           <li class="container-header-contact">
             <a href="tel:89505664666" class="header-contact-link link">
@@ -115,7 +125,7 @@
             </div>
           </a>
         </div>
-        <div class="article-content">
+        <div class="article-content mv-hidden">
           <a href="#0" class="article-link link">
             <img src="images/hands.jpg" class="article-preview" alt="Квартирный переезд" title="Квартирный переезд">
             <div class="container-article-link">
@@ -125,7 +135,7 @@
             </div>
           </a>
         </div>
-        <div class="article-content">
+        <div class="article-content mv-hidden">
           <a href="#0" class="article-link link">
             <img src="images/box.jpg" class="article-preview" alt="Офисный переезд" title="Офисный переезд">
             <div class="container-article-link">
@@ -135,7 +145,7 @@
             </div>   
           </a>
         </div>
-        <div class="article-content">
+        <div class="article-content mv-hidden">
           <a href="#0" class="article-link link">
             <img src="images/home.jpg" class="article-preview" alt="Дачный переезд" title="Дачный переезд">
             <div class="container-article-link">
@@ -309,7 +319,7 @@
             </ul>
             <img src="images/gazel.jpg" class="box-veh-fleet-pre" alt="Газель 3м, 1,5тн, 12м3" title="Газель 3м, 1,5тн, 12м3">
           </div>
-          <div class="container-vehicle-fleet">
+          <div class="container-vehicle-fleet mv-hidden">
             <ul class="list-veh-parm-mass list">
               <li class="item-veh-parm-mass veh-parm">
                 3 тонны
@@ -320,7 +330,7 @@
             </ul>
             <img src="images/hyundai.jpg" class="box-veh-fleet-pre" alt="Грузовик, 3,5м, 3,5 тн, 15м3" title="Грузовик, 3,5м, 3,5 тн, 15м3">
           </div>
-          <div class="container-vehicle-fleet">
+          <div class="container-vehicle-fleet mv-hidden">
             <ul class="list-veh-parm-mass list">
               <li class="item-veh-parm-mass veh-parm">
                 10 тонн
@@ -331,7 +341,7 @@
             </ul>
             <img src="images/kamaz.jpg" class="box-veh-fleet-pre" alt="Грузовик, 6м, 10 тн, 34 м3" title="Грузовик, 6м, 10 тн, 34 м3">
           </div>
-          <div class="container-vehicle-fleet">
+          <div class="container-vehicle-fleet mv-hidden">
             <ul class="list-veh-parm-mass list">
               <li class="item-veh-parm-mass veh-parm">
                 20 тонн
@@ -376,7 +386,7 @@
             </div> 
           </a>
         </li>
-        <li class="item-price-veh-mass veh-parm">
+        <li class="item-price-veh-mass veh-parm mv-hidden">
           <a href="#0" class="item-price-link link">
             <div class="box-item-pr-veh-mass">
               <p class="item-pr-veh-mass-tx">
@@ -385,16 +395,7 @@
             </div> 
           </a>
         </li>
-        <li class="item-price-veh-mass veh-parm">
-          <a href="#0" class="item-price-link link">
-            <div class="box-item-pr-veh-mass">
-              <p class="item-pr-veh-mass-tx">
-                5 тонн
-              </p>
-            </div> 
-          </a>
-        </li>
-        <li class="item-price-veh-mass veh-parm">
+        <li class="item-price-veh-mass veh-parm mv-hidden">
           <a href="#0" class="item-price-link link">
             <div class="box-item-pr-veh-mass">
               <p class="item-pr-veh-mass-tx">
@@ -403,7 +404,7 @@
             </div> 
           </a>
         </li>
-        <li class="item-price-veh-mass veh-parm">
+        <li class="item-price-veh-mass veh-parm mv-hidden">
           <a href="#0" class="item-price-link link">
             <div class="box-item-pr-veh-mass">
               <p class="item-pr-veh-mass-tx">
@@ -509,69 +510,6 @@
                   </li>
                   <li class="item-price-info price-info-text">
                     Mazda
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 class="header-price-list">
-                  Длина кузова
-                </h4>
-                <p class="info-text price-info-text">
-                  от 4.5 м. до 6.5 м.
-                </p>
-                <h4 class="header-price-list">
-                  Объем кузова
-                </h4>
-                <p class="info-text price-info-text">
-                  от 18 до 30 куб. м.
-                </p>
-                <h4 class="header-price-list">
-                  Грузоподъемность
-                </h4>
-                <p class="info-text price-info-text">
-                  от 3 до 4 т.
-                </p>
-                <h4 class="header-price-list">
-                  Цена за км
-                </h4>
-                <p class="info-text price-info-text">
-                  17 руб./км
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 5 тонн -->
-      <section class="box-price hidden">
-        <div class="container-price-text">
-          <p class="price-text">
-            Данные машины компактны и маневренные, не требуют больших подъездных путей. Идеально подходят для «перевозки» 2-к. квартиры.
-          </p>
-        </div>
-        <div class="box-price-content">
-          <figure class="box-price-preview">
-            <img src="images/volvo.jpg" class="price-preview" alt="volvo" title="volvo">
-            <img src="images/backsize.jpg" class="price-preview" alt="volvo" title="volvo">
-          </figure>
-          <div class="box-price-content-info">
-            <div class="box-price-info">
-              <div class="box-pr-in-car-brands">
-                <h4 class="header-price-list">
-                  Марки автомобилей
-                </h4>
-                <ul class="list-price-info list">
-                  <li class="item-price-info price-info-text">
-                    Hino
-                  </li>
-                  <li class="item-price-info price-info-text">
-                    Volvo
-                  </li>
-                  <li class="item-price-info price-info-text">
-                    КамАЗ
-                  </li>
-                  <li class="item-price-info price-info-text">
-                    Isuzu
                   </li>
                 </ul>
               </div>
@@ -761,7 +699,7 @@
       <div class="box-form-content">
         <label class="field-group">
           <span class="field-label form-text">Ваше имя</span>
-          <input type="text" class="field" required>
+          <input type="text" class="field" minlength="2" maxlength="20" required>
         </label>
         <label class="field-group">
           <span class="field-label form-text">Телефон</span>
@@ -802,7 +740,7 @@
       <div class="box-form-content">
         <label class="field-group">
           <span class="field-label form-text">Ваше имя</span>
-          <input type="text" class="field" required>
+          <input type="text" class="field" minlength="2" maxlength="20" required>
         </label>
         <label class="field-group">
           <span class="field-label form-text">Телефон</span>
@@ -850,6 +788,7 @@
       </div>
     </div>
   </footer>
-<script src="script/script.js"></script>
+<script src="script/scriptVar.js" defer></script>
+<script src="script/script.js" defer></script>
 </body>
 </html>
