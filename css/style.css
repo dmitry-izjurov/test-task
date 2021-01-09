@@ -1164,6 +1164,10 @@ body {
   background-color: #d12c2c;
 }
 
+.container-article-content-next, .container-article-content-pre, .container-vehicle-fleet-next, .container-vehicle-fleet-pre, .box-i-pr-mass-pre, .box-i-pr-mass-next {
+  display: none;
+}
+
 /* - - - - - - - Мобильная версия - - - - - - - */
 
 @media (max-width: 640px) and (orientation: portrait) {
@@ -1422,6 +1426,7 @@ body {
 }
 
 .container-article-content-next, .container-article-content-pre, .container-vehicle-fleet-next, .container-vehicle-fleet-pre {
+  display: flex;
   position: absolute;
   box-sizing: border-box;
   border: 0.31vw solid #663333;
@@ -1697,6 +1702,7 @@ body {
 }
 
 .box-i-pr-mass-next, .box-i-pr-mass-pre {
+  display: flex;
   position: absolute;
   top: 0;
   box-sizing: border-box;
@@ -1899,7 +1905,7 @@ body {
 
 /* - - - - - - - Планшетная версия - - - - - - - */
 
-@media (min-width: 641px) and (max-width: 1023px) {
+@media (min-width: 480px) and (max-width: 640px) and (orientation: landscape), (min-width: 641px) and (max-width: 1023px) {
   body {
     min-width: initial;
   }
@@ -2210,7 +2216,7 @@ body {
     width: 42.52vw;
     height: 14.66vw;
   }
-  
+
   /* - - - - - - - footer - - - - - - - */
   
   .container-content-footer {
@@ -2298,7 +2304,7 @@ body {
   .item-pr-veh-mass-tx {
     font-size: 1.8vw;
   }
-  
+
   .container-price-text {
     margin-top: 4.59vw;
     margin-bottom: 3.22vw;
