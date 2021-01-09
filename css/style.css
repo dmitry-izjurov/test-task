@@ -1170,7 +1170,7 @@ body {
 
 /* - - - - - - - Мобильная версия - - - - - - - */
 
-@media (max-width: 640px) and (orientation: portrait) {
+@media (max-width: 640px) {
   body {
     margin-top: 17.2vw;
     min-width: initial;
@@ -1427,6 +1427,8 @@ body {
 
 .container-article-content-next, .container-article-content-pre, .container-vehicle-fleet-next, .container-vehicle-fleet-pre {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   box-sizing: border-box;
   border: 0.31vw solid #663333;
@@ -1703,6 +1705,8 @@ body {
 
 .box-i-pr-mass-next, .box-i-pr-mass-pre {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   box-sizing: border-box;
@@ -1905,7 +1909,7 @@ body {
 
 /* - - - - - - - Планшетная версия - - - - - - - */
 
-@media (min-width: 480px) and (max-width: 640px) and (orientation: landscape), (min-width: 641px) and (max-width: 1023px) {
+@media (min-width: 641px) and (max-width: 1023px) {
   body {
     min-width: initial;
   }

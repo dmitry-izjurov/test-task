@@ -7,7 +7,7 @@ let elementButtonFeedBackArr = Array.from(elementButtonFeedBack).forEach(a => {
       elementFormFeedback.classList.remove('hidden');
     }
     // Для мобильной версии
-    if (window.outerWidth <= 640 && window.outerWidth < window.outerHeight) {
+    if (window.outerWidth <= 640) {
       if (elementbgHeaderLogo.classList.contains('mv-button-menu-cl')) {
         showMenuMV();
       }
@@ -53,7 +53,7 @@ if (elementPagePrice.classList.contains('hidden')) {
 }
 
 // Для мобильной версии
-if (window.outerWidth <= 640 && window.outerWidth < window.outerHeight) {
+if (window.outerWidth <= 640) {
   showMenuMV();
 }
 
@@ -131,8 +131,9 @@ function printTopPage() {
 }
 
 // Управление картинками с услугами, грузовиками и прайсом
-if (window.outerWidth <= 640 && window.outerWidth < window.outerHeight) {
+if (window.outerWidth <= 640) {
   // Упраление услугами
+  // window.outerWidth < window.outerHeight
   let elementArticleContentArr = Array.from(elementArticleContent);
   for (let i = 0; i < elementArticleContentArr.length; i++) {
     elementArticleContentArr[i].insertAdjacentHTML('beforeend', 
