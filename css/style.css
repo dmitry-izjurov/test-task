@@ -396,10 +396,10 @@ body {
 	position: absolute;
 
 	top: 0;
-	right: 0;
+	right: -19px;
 	border-top: 28px solid #518a32;
 	border-right: 19px solid transparent;
-	background-color: #ffffff;
+	background-color: none;
 }
 
 .container-article-link-main {
@@ -415,7 +415,12 @@ body {
 }
 
 .container-article-link-main::after {
-  display: none;
+  content: "";
+	position: absolute;
+	top: 0;
+	right: -29px;
+	border-top: 40px solid #518a32;
+	border-right: 29px solid transparent;
 }
 
 .article-link {
@@ -1401,7 +1406,8 @@ body {
   padding-left: 5.62vw;
 }
 
-.container-article-link::after {
+.container-article-link::after, .container-article-link-main::after {
+  right: -5.7vw;
 	border-top: 8.75vw solid #518a32;
 	border-right: 5.93vw solid transparent;
 }
@@ -1409,10 +1415,6 @@ body {
 .container-article-link-main {
   left: auto;
   bottom: auto;
-}
-
-.container-article-link-main::after {
-  display: initial;
 }
 
 .article-link {
@@ -2055,15 +2057,16 @@ body {
   }
   
   .container-article-link {
-    width: 25vw;
+    width: 22vw;
     padding-top: 0.48vw;
     padding-bottom: 0.48vw;
     padding-left: 1.76vw;
   }
   
   .container-article-link::after {
-    border-top: 3.44vw solid #518a32;
-    border-right: 2.32vw solid transparent;
+    right: -2.19vw;
+    border-top: 3.42vw solid #518a32;
+    border-right: 2.3vw solid transparent;
   }
   
   .container-article-link-main {
@@ -2072,6 +2075,12 @@ body {
     padding-bottom: 1.07vw;
     padding-left: 1.76vw;
     bottom: 5.08vw;
+  }
+  
+  .container-article-link-main::after {
+	  right: -3.1vw;
+	  border-top: 4.53vw solid #518a32;
+	  border-right: 3.27vw solid transparent;
   }
   
   .article-link {
@@ -2598,8 +2607,9 @@ body {
   }
   
   .container-article-link::after {
-    border-top: 2.05vw solid #518a32;
-    border-right: 1.39vw solid transparent;
+    right: -1.3vw;
+    border-top: 2vw solid #518a32;
+    border-right: 1.35vw solid transparent;
   }
   
   .container-article-link-main {
@@ -2610,6 +2620,12 @@ body {
     bottom: 3.80vw;
   }
   
+  .container-article-link-main::after {
+    right: -1.93vw;
+    border-top: 2.95vw solid #518a32;
+    border-right: 2vw solid transparent;
+  }
+
   .article-link {
     font-size: 0.95vw;
   }
