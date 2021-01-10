@@ -1426,9 +1426,7 @@ body {
 }
 
 .container-article-content-next, .container-article-content-pre, .container-vehicle-fleet-next, .container-vehicle-fleet-pre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: initial;
   position: absolute;
   box-sizing: border-box;
   border: 0.31vw solid #663333;
@@ -1704,9 +1702,7 @@ body {
 }
 
 .box-i-pr-mass-next, .box-i-pr-mass-pre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: initial;
   position: absolute;
   top: 0;
   box-sizing: border-box;
