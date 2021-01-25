@@ -4,11 +4,13 @@ if (window.outerWidth > 640) {
     elemListItemDropdown.item(number).addEventListener('mouseover', function() {
       if (elemMenuList.item(number).classList.contains('hidden')) {
         elemMenuList.item(number).classList.remove('hidden');
+        elemMenuList.item(number).style = 'background-color: #e6e6e6;';
       }
     });
     elemListItemDropdown.item(number).addEventListener('mouseout', function() {
       if (!elemMenuList.item(number).classList.contains('hidden')) {
         elemMenuList.item(number).classList.add('hidden');
+        elemMenuList.item(number).style = 'background-color: #ffffff;';
       }
     });
   }
@@ -17,10 +19,9 @@ if (window.outerWidth > 640) {
   }
 }
 
-// Убираем погружение обработчика на ссылке и поднимаемся наверх
+// Убираем погружение обработчика на ссылке
 elemWrapConLogo.addEventListener('click', function(event) {
   event.stopPropagation();
-  scroll(0,0);
 });
 
 // Открываем форму Обратная связь
@@ -42,7 +43,7 @@ for (let i = 0; i < elementButtonFeedBack.length; i++) {
 }
 
 // Открываем форму Оставить заявку
-elementTransLink.addEventListener('click', function() {
+elementButtonRequest.addEventListener('click', function() {
   elementFormRequest.classList.toggle('hidden');
   // Для мобильной версии
   if (window.outerWidth <= 640) {
@@ -73,22 +74,25 @@ for (let i = 0; i < elementButtonCloseForm.length; i++) {
   }
 }
 
-// Управление фиксидом на кнопке вверх
-window.addEventListener('scroll', setMenu);
-function setMenu() {
-  let viewportHeight = window.innerHeight;
-  let elementMainTop = elementMain.getBoundingClientRect().top;
-  if (elementMainTop < viewportHeight * -1) {
-    elementButtonUp.classList.remove('button_hidden');
-  }
-
-  if (elementMainTop > viewportHeight * -1) {
-    elementButtonUp.classList.add('button_hidden');
+// Открываем вкладки с весами
+function getItemMenuPrice(number) {
+  elementMenuPrice.item(number).addEventListener('click', openSection);
+  function openSection() {
+    if (!elementMenuPrice.item(number).classList.contains('item_active')) {
+      for (let a = 0; a < elementMenuPrice.length; a++) {
+        if (elementMenuPrice.item(a).classList.contains('item_active')) {
+          elementMenuPrice.item(a).classList.remove('item_active');
+          elementSectionMass.item(a).classList.add('hidden');
+        }
+      }
+      elementMenuPrice.item(number).classList.add('item_active');
+      elementSectionMass.item(number).classList.remove('hidden');
+      numberActiveSection = number;
+      return numberActiveSection;
+    }
   }
 }
 
-// Кнопка возврата наверх страницы
-elementButtonUp.addEventListener('click', printTopPage);
-function printTopPage() {
-  scroll(0,0);
+for (let i = 0; i < elementMenuPrice.length; i++) {
+  getItemMenuPrice(i);
 }
